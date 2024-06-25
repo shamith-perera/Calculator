@@ -35,8 +35,6 @@ function calculate() {
         }
     }
     numbers.push(Number(cal.substring(numberStart)));
-    console.log(numbers);
-    console.log(operators);
     // Evaluate division first
     for(let i = 0; i < operators.length; i++) {
         if(operators[i] === '/') {
