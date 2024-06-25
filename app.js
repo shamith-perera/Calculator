@@ -1,11 +1,13 @@
 function addToDisplay(value) {
     document.getElementById("display").value += value;
+    scrollToRightEnd() ;
 }
 function addOppToDisplay(opearator) {
     let input =document.getElementById("display").value ;
     let lastValue = input[input.length-1];
-    if(lastValue!=='+' && lastValue!=='-' && lastValue!=='*' && lastValue!=='/' ){
+    if(lastValue!=='+' && lastValue!=='-' && lastValue!=='*' && lastValue!=='/'){
         document.getElementById("display").value += opearator;
+        scrollToRightEnd() ;
     }
 }
 
@@ -17,7 +19,8 @@ function clearLast(){
     let input =document.getElementById("display").value ;
     if(input.length>0){
         input = input.substring(0,input.length-1);
-        document.getElementById("display").value = input;   
+        document.getElementById("display").value = input;  
+        scrollToRightEnd();
     }
 }
 
@@ -68,6 +71,11 @@ function calculate() {
         }
     }
     document.getElementById("display").value=numbers[0];   
+}
+
+function scrollToRightEnd() {
+    var textarea = document.getElementById('display');
+    textarea.scrollLeft = textarea.scrollWidth - textarea.clientWidth;
 }
     
 
