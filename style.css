@@ -1,5 +1,5 @@
 .calculator {
-    width: 375px;
+    width: 390px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -11,12 +11,15 @@
 #display{
     width: 365px;
     margin: 10px auto;
-    height: 70px;
+    height: 65px;
     border-radius: 8px;
-    font-size: xx-large;
+    font-size: 400%;
     text-align: right;
     border: none;
     background-color: #ebeefb;
+    padding: 15px;
+    resize: none;
+    white-space: nowrap;
 }
 
 .btn{
