@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="icons/cal.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text"  id="display" disabled>
+        <input type="button" value="AC" class="btn" id="btnAc" onclick="clearDisplay()" >
+        <input type="button" value="00" class="btn" id="btn" onclick="addToDisplay('00')">
+        <input type="button" value="/" class="btn" id="btnDiv" onclick="addOppToDisplay('/')">
+        <input type="button" value="7" class="btn" id="btn7" onclick="addToDisplay('7')">
+        <input type="button" value="8" class="btn" id="btn8" onclick="addToDisplay('8')">
+        <input type="button" value="9" class="btn" id="btn9" onclick="addToDisplay('9')">
+        <input type="button" value="*" class="btn" id="btnMul" onclick="addOppToDisplay('*')">
+        <input type="button" value="4" class="btn" id="btn4" onclick="addToDisplay('4')">
+        <input type="button" value="5" class="btn" id="btn5" onclick="addToDisplay('5')">
+        <input type="button" value="6" class="btn" id="btn6" onclick="addToDisplay('6')">
+        <input type="button" value="-" class="btn" id="btnSub" onclick="addOppToDisplay('-')">
+        <input type="button" value="1" class="btn" id="btn1" onclick="addToDisplay('1')">
+        <input type="button" value="2" class="btn" id="btn2" onclick="addToDisplay('2')">
+        <input type="button" value="3" class="btn" id="btn3" onclick="addToDisplay('3')">
+        <input type="button" value="+" class="btn" id="btnAdd" onclick="addOppToDisplay('+')">
+        <input type="button" value="0" class="btn" id="btn0" onclick="addToDisplay('0')">
+        <input type="button" value="." class="btn" id="btnPoint" onclick="addToDisplay('.')">
+        <input type="button" value="C" class="btn" id="btnClear" onclick="clearLast()">
+        <input type="button" value="=" class="btn" id="btnEqual" onclick="calculate()">
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
